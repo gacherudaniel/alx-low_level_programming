@@ -1,20 +1,26 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 
-int main() {
-    srand(time(NULL));
-    int n = rand() % 201 - 100; // random number between -100 and 100 (inclusive)
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    int n;
 
-    printf("The number %d ", n);
-    
-    if (n > 0) {
-        printf("is positive\n");
-    } else if (n < 0) {
-        printf("is negative\n");
-    } else {
-        printf("is zero\n");
-    }
+    srand(time(0));
+    n = rand() % 201 - 100; /* random number between -100 and 100 (inclusive) */
+    printf("%d is ", n);
+    if (n > 0)
+        printf("positive\n");
+    else if (n == 0)
+        printf("zero\n");
+    else
+        printf("negative\n");
 
-    return 0;
+    return (0);
 }
+
