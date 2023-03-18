@@ -6,8 +6,7 @@
  * Main function
  */
 int main(void){
-	int n;
-	int last_digit;
+	int n, last_digit;
 	
 	srand(time(0));
 	n = rand();
