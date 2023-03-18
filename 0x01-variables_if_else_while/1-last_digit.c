@@ -13,8 +13,8 @@ int main(void){
 
 	printf("Last digit of %d is ", n);
 	
-	// Get the last digit of n
-	 int last_digit = n % 10;
+	/* Get the last digit of n*/
+	int last_digit = n % 10;
 
 	if (last_digit >5){
 		printf("and is greater than 5\n");
